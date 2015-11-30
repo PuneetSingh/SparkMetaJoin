@@ -1,0 +1,21 @@
+{
+  "joins": [
+    {
+      "left-table" : "tab1",
+      "left-file": "/root/file1.txt",
+      "right-table": "tab2",
+      "right-file": "/root/file2.txt",
+      "join-type": "inner",
+      "left-keys": "c1, c2",
+      "right-keys": "c3, c4"
+  }, {
+      "left-table" : "tab2",
+      "left-file": "/root/file2.txt",
+      "right-table": "tab3",
+      "right-file": "/root/file3.txt",
+      "join-type": "inner",
+      "left-keys": "c1, c3",
+      "right-keys": "c2, c3"
+    }
+  ]
+}
