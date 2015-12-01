@@ -17,5 +17,13 @@
       "left-keys": "c1, c3",
       "right-keys": "c2, c3"
     }
+  ],
+  "files": [
+    {
+      "file-name": "",
+      "file-loc": "",
+      "hasHeader": true,
+      "headerJSON": {}
+    }
   ]
 }

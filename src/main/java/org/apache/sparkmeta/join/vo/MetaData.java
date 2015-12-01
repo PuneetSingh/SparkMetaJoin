@@ -4,13 +4,13 @@ import java.util.HashMap;
 
 public class MetaData {
 
-	private HashMap<Integer, Join> joinMap;
+	private HashMap<Integer, JoinMeta> joinMap;
 
-	public HashMap<Integer, Join> getJoinMap() {
+	public HashMap<Integer, JoinMeta> getJoinMap() {
 		return joinMap;
 	}
 
-	public void setJoinMap(HashMap<Integer, Join> joinMap) {
+	public void setJoinMap(HashMap<Integer, JoinMeta> joinMap) {
 		this.joinMap = joinMap;
 	}
 	
