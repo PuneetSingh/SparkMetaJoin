@@ -1,21 +1,15 @@
 package org.apache.sparkmeta.join.vo;
 
 import java.util.ArrayList;
-
-import org.apache.sparkmeta.join.reader.Reader;
+import java.util.Map;
 
 public class JoinTableMeta {
 
 	private String tableName;
 	private ArrayList<String> joinKeys;
-	private Reader reader;
+	private Map<String, Pair<String, Object>> filterKeyVals;
+	private SourceMeta sourceMeta;
 	
-	public Reader getReader() {
-		return reader;
-	}
-	public void setReader(Reader reader) {
-		this.reader = reader;
-	}
 	public String getTableName() {
 		return tableName;
 	}
@@ -27,6 +21,18 @@ public class JoinTableMeta {
 	}
 	public void setJoinKeys(ArrayList<String> joinKeys) {
 		this.joinKeys = joinKeys;
+	}
+	public Map<String, Pair<String, Object>> getFilterKeyVals() {
+		return filterKeyVals;
+	}
+	public void setFilterKeyVals(Map<String, Pair<String, Object>> filterKeyVals) {
+		this.filterKeyVals = filterKeyVals;
+	}
+	public SourceMeta getSourceMeta() {
+		return sourceMeta;
+	}
+	public void setSourceMeta(SourceMeta sourceMeta) {
+		this.sourceMeta = sourceMeta;
 	}
 	
 }

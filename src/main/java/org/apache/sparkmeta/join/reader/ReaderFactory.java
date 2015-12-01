@@ -9,4 +9,5 @@ public class ReaderFactory {
 	public Reader getInstance(SourceType sourceType) {
 		return null;
 	}
+	
 }

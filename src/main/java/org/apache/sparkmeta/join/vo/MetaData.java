@@ -1,16 +1,16 @@
 package org.apache.sparkmeta.join.vo;
 
-import java.util.HashMap;
+import java.util.TreeMap;
 
 public class MetaData {
 
-	private HashMap<Integer, JoinMeta> joinMap;
+	private TreeMap<Integer, JoinMeta> joinMap;
 
-	public HashMap<Integer, JoinMeta> getJoinMap() {
+	public TreeMap<Integer, JoinMeta> getJoinMap() {
 		return joinMap;
 	}
 
-	public void setJoinMap(HashMap<Integer, JoinMeta> joinMap) {
+	public void setJoinMap(TreeMap<Integer, JoinMeta> joinMap) {
 		this.joinMap = joinMap;
 	}
 	
