@@ -2,19 +2,10 @@ package org.apache.sparkmeta.join.reader;
 
 import java.io.Closeable;
 
-import org.apache.sparkmeta.join.sources.Source;
+import org.apache.spark.sql.DataFrame;
 
 public abstract class Reader implements Closeable {
 
-	private Source source;
+	protected abstract DataFrame getDataFrame();
 
-	public Reader(Source source) {
-		super();
-		this.source = source;
-	}
-
-	public Source getSource() {
-		return source;
-	}
-	
 }

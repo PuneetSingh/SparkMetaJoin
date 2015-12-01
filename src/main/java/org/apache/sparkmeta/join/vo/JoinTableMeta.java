@@ -2,19 +2,19 @@ package org.apache.sparkmeta.join.vo;
 
 import java.util.ArrayList;
 
-import org.apache.sparkmeta.join.sources.Source;
+import org.apache.sparkmeta.join.reader.Reader;
 
 public class JoinTableMeta {
 
 	private String tableName;
 	private ArrayList<String> joinKeys;
-	private Source source;
+	private Reader reader;
 	
-	public Source getSource() {
-		return source;
+	public Reader getReader() {
+		return reader;
 	}
-	public void setSource(Source source) {
-		this.source = source;
+	public void setReader(Reader reader) {
+		this.reader = reader;
 	}
 	public String getTableName() {
 		return tableName;
