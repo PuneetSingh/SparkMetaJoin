@@ -2,12 +2,20 @@ package org.apache.sparkmeta.join.vo;
 
 import java.util.ArrayList;
 
+import org.apache.sparkmeta.join.sources.Source;
+
 public class JoinTableMeta {
 
 	private String tableName;
 	private ArrayList<String> joinKeys;
-	private JoinFileMeta fileMetaData;
+	private Source source;
 	
+	public Source getSource() {
+		return source;
+	}
+	public void setSource(Source source) {
+		this.source = source;
+	}
 	public String getTableName() {
 		return tableName;
 	}
@@ -19,12 +27,6 @@ public class JoinTableMeta {
 	}
 	public void setJoinKeys(ArrayList<String> joinKeys) {
 		this.joinKeys = joinKeys;
-	}
-	public JoinFileMeta getFileMetaData() {
-		return fileMetaData;
-	}
-	public void setFileMetaData(JoinFileMeta fileMetaData) {
-		this.fileMetaData = fileMetaData;
 	}
 	
 }

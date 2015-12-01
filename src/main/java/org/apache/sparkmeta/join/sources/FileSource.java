@@ -1,13 +1,19 @@
-package org.apache.sparkmeta.join.vo;
+package org.apache.sparkmeta.join.sources;
 
 import java.util.ArrayList;
 
-public class JoinFileMeta {
+import org.apache.sparkmeta.join.constants.SourceType;
+
+public class FileSource extends Source {
 
 	private String fileName;
 	private String fileLocation;
 	private boolean hasHeader;
 	private ArrayList<String> headers;
+	
+	public FileSource() {
+		super(SourceType.FILE);
+	}
 	
 	public String getFileName() {
 		return fileName;
